@@ -2,16 +2,17 @@ package apps.ams_spring.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import java.time.LocalDateTime;
+
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
 public class UserCreateRequest {
     private String name;
-    private int schoolNumber;
+    private Integer schoolNumber;
     private String clubRole;
     private String teamRole;
     private String teamName;
-    private double clubYear;
-    private LocalDateTime birthDay;
+    private Double clubYear;
+    private LocalDate birthDay;
 }

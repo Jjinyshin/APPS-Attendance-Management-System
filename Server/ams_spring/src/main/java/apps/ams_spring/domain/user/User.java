@@ -2,7 +2,8 @@ package apps.ams_spring.domain.user;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 @Entity
 public class User {
@@ -20,9 +21,9 @@ public class User {
     private String teamName;
 
     private Double clubYear;
-    private LocalDateTime birthDay;
+    private LocalDate birthDay;
 
     protected User(){}
-    public User(String name, int schoolNumber, String clubRole, String teamRole, String teamName, double clubYear, LocalDateTime birthDay) {
+    public User(String name, int schoolNumber, String clubRole, String teamRole, String teamName, double clubYear, LocalDate birthDay) {
     }
 }
