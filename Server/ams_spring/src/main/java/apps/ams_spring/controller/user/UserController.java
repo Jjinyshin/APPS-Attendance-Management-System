@@ -1,7 +1,7 @@
-package jiny.apps_ams.controller.user;
+package apps.ams_spring.controller.user;
 
-import jiny.apps_ams.dto.request.UserCreateRequest;
-import jiny.apps_ams.service.user.UserService;
+import apps.ams_spring.dto.request.UserCreateRequest;
+import apps.ams_spring.service.user.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,13 +1,13 @@
-package jiny.apps_ams;
+package apps.ams_spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppsAmsApplication {
+public class AmsSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AppsAmsApplication.class, args);
+        SpringApplication.run(AmsSpringApplication.class, args);
     }
 
 }

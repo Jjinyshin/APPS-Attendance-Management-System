@@ -1,10 +1,10 @@
-package jiny.apps_ams;
+package apps.ams_spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AppsAmsApplicationTests {
+class AmsSpringApplicationTests {
 
     @Test
     void contextLoads() {

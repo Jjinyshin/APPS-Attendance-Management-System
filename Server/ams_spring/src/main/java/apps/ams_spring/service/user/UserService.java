@@ -1,8 +1,9 @@
-package jiny.apps_ams.service.user;
+package apps.ams_spring.service.user;
 
-import jiny.apps_ams.domain.user.User;
-import jiny.apps_ams.dto.request.UserCreateRequest;
-import jiny.apps_ams.repository.UserRepository;
+
+import apps.ams_spring.domain.user.User;
+import apps.ams_spring.dto.request.UserCreateRequest;
+import apps.ams_spring.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,4 +1,4 @@
-package jiny.apps_ams.domain.user;
+package apps.ams_spring.domain.user;
 
 import jakarta.persistence.*;
 

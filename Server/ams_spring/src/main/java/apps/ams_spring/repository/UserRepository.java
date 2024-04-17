@@ -1,6 +1,6 @@
-package jiny.apps_ams.repository;
+package apps.ams_spring.repository;
 
-import jiny.apps_ams.domain.user.User;
+import apps.ams_spring.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

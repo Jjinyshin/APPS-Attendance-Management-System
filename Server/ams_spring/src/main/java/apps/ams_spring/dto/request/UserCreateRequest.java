@@ -1,4 +1,4 @@
-package jiny.apps_ams.dto.request;
+package apps.ams_spring.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
