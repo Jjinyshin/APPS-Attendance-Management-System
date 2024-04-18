@@ -35,18 +35,4 @@ public class User {
         this.clubYear = clubYear;
         this.birthDay = birthDay;
     }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", schoolNumber=" + schoolNumber +
-                ", clubRole='" + clubRole + '\'' +
-                ", teamRole='" + teamRole + '\'' +
-                ", teamName='" + teamName + '\'' +
-                ", clubYear=" + clubYear +
-                ", birthDay=" + birthDay +
-                '}';
-    }
 }

@@ -20,11 +20,8 @@ public class UserService {
 
     @Transactional
     public void saveUser(UserCreateRequest request) {
-        log.info("username={}, birthday={}", request.getName(), request.getBirthDay());
-
-        User savedUser = userRepository.save(new User(null, request.getName(), request.getSchoolNumber(), request.getClubRole(), request.getTeamRole(), request.getTeamName(), request.getClubYear(), request.getBirthDay()));
-
-        System.out.println(savedUser.toString());
+        User u = request.toEntity();
+        userRepository.save(u);
     }
 
 }

@@ -1,5 +1,6 @@
 package apps.ams_spring.dto.request;
 
+import apps.ams_spring.domain.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -15,4 +16,8 @@ public class UserCreateRequest {
     private String teamName;
     private Double clubYear;
     private LocalDate birthDay;
+
+    public User toEntity() {
+        return new User(null, name, schoolNumber, clubRole, teamRole, teamName, clubYear, birthDay);
+    }
 }
