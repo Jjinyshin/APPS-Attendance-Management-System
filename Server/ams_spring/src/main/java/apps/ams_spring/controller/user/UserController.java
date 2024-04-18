@@ -18,10 +18,7 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public void saveUser(@RequestBody UserCreateRequest userCreateRequest) {
-
-        log.info("username={}, birthday={}", userCreateRequest.getName(), userCreateRequest.getBirthDay());
-
-        userService.saveUser(userCreateRequest);
+    public void saveUser(@RequestBody UserCreateRequest request) {
+        userService.saveUser(request);
     }
 }

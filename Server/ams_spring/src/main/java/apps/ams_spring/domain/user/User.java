@@ -10,7 +10,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id = null;
+    private Long id;
 
     private String name;
     private Integer schoolNumber;
@@ -24,6 +24,29 @@ public class User {
     private LocalDate birthDay;
 
     protected User(){}
-    public User(String name, int schoolNumber, String clubRole, String teamRole, String teamName, double clubYear, LocalDate birthDay) {
+
+    public User(Long id, String name, Integer schoolNumber, String clubRole, String teamRole, String teamName, Double clubYear, LocalDate birthDay) {
+        this.id = id;
+        this.name = name;
+        this.schoolNumber = schoolNumber;
+        this.clubRole = clubRole;
+        this.teamRole = teamRole;
+        this.teamName = teamName;
+        this.clubYear = clubYear;
+        this.birthDay = birthDay;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", schoolNumber=" + schoolNumber +
+                ", clubRole='" + clubRole + '\'' +
+                ", teamRole='" + teamRole + '\'' +
+                ", teamName='" + teamName + '\'' +
+                ", clubYear=" + clubYear +
+                ", birthDay=" + birthDay +
+                '}';
     }
 }

@@ -4,9 +4,11 @@ package apps.ams_spring.service.user;
 import apps.ams_spring.domain.user.User;
 import apps.ams_spring.dto.request.UserCreateRequest;
 import apps.ams_spring.repository.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+@Slf4j
 @Service
 public class UserService {
 
@@ -18,7 +20,11 @@ public class UserService {
 
     @Transactional
     public void saveUser(UserCreateRequest request) {
-        userRepository.save(new User(request.getName(), request.getSchoolNumber(), request.getClubRole(), request.getTeamRole(), request.getTeamName(), request.getClubYear(), request.getBirthDay()));
+        log.info("username={}, birthday={}", request.getName(), request.getBirthDay());
+
+        User savedUser = userRepository.save(new User(null, request.getName(), request.getSchoolNumber(), request.getClubRole(), request.getTeamRole(), request.getTeamName(), request.getClubYear(), request.getBirthDay()));
+
+        System.out.println(savedUser.toString());
     }
 
 }
